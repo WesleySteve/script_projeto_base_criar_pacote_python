@@ -39,6 +39,10 @@ _CRIAR() {
     else
         mkdir $nome && cd $nome && > t.txt
 
+         # chamada da função
+
+        _ARQUIVOS
+
           echo "PROJETO ' $nome ' CRIADO COM SUCESSO!"    
 
         exit 0 ;
