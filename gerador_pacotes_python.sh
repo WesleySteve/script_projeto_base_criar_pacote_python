@@ -47,6 +47,16 @@ _CRIAR() {
 
 }
 
+# função responsavel em coletar os arquivos de base de um projeto de dados
+
+_ARQUIVOS() {
+
+      echo "## ${nome}" > README.md
+
+}
+
+# ------------------- fim criar estrutura de diretórios ------------------- #
+
 
 # ---------------------------- menu entrada ------------------------------- #
 
