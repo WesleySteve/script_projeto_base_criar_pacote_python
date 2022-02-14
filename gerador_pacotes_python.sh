@@ -23,6 +23,30 @@ EOF
 # --------------------- fim ajuda do programa ------------------------- #
 
 
+# ---------------------  criar estrutura de diretórios -------------------- #
+
+# função responsavel em criar uma estrutura inicial de um projeto de dados
+
+_CRIAR() {
+
+    read -p "Digite o nome do projeto: " nome
+
+    if [[ -z $nome ]] 
+    then
+        echo "NOME DO PROJETO NÃO DEFINIDOR!"
+        exit 1 ;
+
+    else
+        mkdir $nome && cd $nome && > t.txt
+
+          echo "PROJETO ' $nome ' CRIADO COM SUCESSO!"    
+
+        exit 0 ;
+    
+    fi
+
+}
+
 
 # ---------------------------- menu entrada ------------------------------- #
 
